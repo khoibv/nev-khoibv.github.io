@@ -82,6 +82,34 @@ h1.logo {
       height: 170px; }
     .wraper.homepage .business-in-vietnam .right-side li:nth-child(2) img, .wraper.homepage .business-in-vietnam .right-side li:nth-child(4) img {
       float: right; }
+.wraper.homepage .business-in-vietnam .left-side li.service-title {
+  width: 100%;
+  padding: 20px 0 20px 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 1px #ccc; }
+  .wraper.homepage .business-in-vietnam .left-side li.service-title span {
+    position: absolute;
+    float: right;
+    width: 30px;
+    height: 45px;
+    right: 25px;
+    margin-top: -10px;
+    background: url(../img/icon-next.png) 100% no-repeat; }
+  .wraper.homepage .business-in-vietnam .left-side li.service-title:nth-child(1) {
+    background: -webkit-linear-gradient(135deg, #0084b6, #4fa7c8, #61aecc);
+    background: linear-gradient(-45deg, #0084b6, #4fa7c8, #61aecc); }
+  .wraper.homepage .business-in-vietnam .left-side li.service-title:nth-child(2) {
+    background: -webkit-linear-gradient(135deg, #0084b6, #4fa7c8, #61aecc);
+    background: linear-gradient(-45deg, #0084b6, #4fa7c8, #61aecc); }
+  .wraper.homepage .business-in-vietnam .left-side li.service-title:nth-child(3) {
+    background: -webkit-linear-gradient(135deg, #0084b6, #4fa7c8, #61aecc);
+    background: linear-gradient(-45deg, #0084b6, #4fa7c8, #61aecc); }
+  .wraper.homepage .business-in-vietnam .left-side li.service-title:nth-child(4) {
+    background: -webkit-linear-gradient(135deg, #0084b6, #4fa7c8, #61aecc);
+    background: linear-gradient(-45deg, #0084b6, #4fa7c8, #61aecc); }
+  .wraper.homepage .business-in-vietnam .left-side li.service-title a {
+    color: #fff; }
 .wraper.homepage .title-news h3, .wraper.homepage .title-product h3 {
   width: 100%;
   border-bottom: 5px solid #1098cc;
@@ -91,14 +119,37 @@ h1.logo {
   .wraper.homepage .title-news h3 span i, .wraper.homepage .title-product h3 span i {
     color: #00aff0;
     padding: 15px 15px 0 0; }
+.wraper.homepage .new-deatail-home .row {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc; }
 
 .footer-service {
-  background: #dddddd; }
+  background: #dddddd;
+  padding: 20px 0; }
+  .footer-service .box-info-inner h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0; }
+  .footer-service .box-info-inner ul li a {
+    font-size: 14px; }
 
 .footer-map {
-  background: #707070; }
+  background: #707070;
+  color: #fff;
+  padding: 20px 0; }
+  .footer-map h2 {
+    font-weight: bold;
+    font-size: 14px; }
+  .footer-map ul li a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px; }
 
 .footer-coppy-right {
-  background: #464646; }
+  background: #464646;
+  padding: 10px 0; }
+  .footer-coppy-right a {
+    font-size: 12px;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
