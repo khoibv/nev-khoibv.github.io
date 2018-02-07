@@ -184,9 +184,45 @@ h1.logo{
 
 	}
 	.new-deatail-home{
-		.row{
-			padding: 10px 0;
-			border-bottom: 1px dashed #ccc;
+		margin-bottom: 20px;
+		.main-news{
+			margin-top:10px;
+			.detail{
+				background: #ebebeb;
+				padding: 10px;
+				.date{
+					color: #000;
+					font-weight: bold;
+					width: 100%;
+					margin-right: 10px;
+					i{
+						padding: 0 5px 0 0;
+					}
+				}
+				.title{
+					color: #000;
+					font-weight: bold;
+				}
+			}
+		}
+		.news-detail{
+			.row{
+				padding: 10px 0;
+				border-bottom: 1px dashed #ccc;
+				margin: 0;
+				.col-md-2.col-sm-2{
+					padding: 0;
+				}
+				.col-md-10.col-sm-10{
+					padding: 0;
+					a{
+						text-align: justify;
+					}
+				}
+			}
+			a.all-new{
+
+			}
 		}
 	}
 }
@@ -224,8 +260,9 @@ h1.logo{
 	color: #fff;
 	padding: 20px 0;
 	h2{
-		font-weight:bold;
-		font-size:14px;
+		font-weight: bold;
+		font-size: 14px;
+		padding-bottom: 10px;
 
 	}
 	ul{
@@ -233,15 +270,19 @@ h1.logo{
 			a{
 				color: #fff;
 				font-weight:normal;
-				font-size:1.4 rem;
+				font-size: .8rem;
 			}
 			i{
-				padding: 10px;
+				padding: 0 10px 10px 5px;
 			}
 			.fax{
 				margin-left:5px;
 			}
 		}
+	}
+	.col-md-7.col-sm-7.col-xs-12, .col-md-5.col-sm-5.col-xs-12 {
+		border-left: 2px dashed #000;
+		padding-left: 10px;
 	}
 }
 .footer-coppy-right {
