@@ -653,9 +653,10 @@ Slider navigation
     width: 95px;
   }
   .cd-slider-nav a {
-    padding-top: 35px;
-    font-size: 1.1rem;
+    padding-top: 40px;
+    font-size: 0.7rem;
     text-transform: uppercase;
+    color: #fff;
   }
   .cd-slider-nav a::before {
     top: 10px;

@@ -1,19 +1,19 @@
 @charset "utf-8";
-@import url(../bootstrap.min.css);
-@import url(../font-awesome.min.css);
-@import url(../reset.css);
-@import url(../animate.min.css);
-
+@import url('../static/css/bootstrap.css');
+@import url('../static/css/fontawesome-all.css');
+@import "reset.scss";
+@import "mediastyle.scss";
 
 body, input, select, textarea, button, .ist-container {
-  font-style: normal;
-  font-family: "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	overflow: scroll;
+  	font-style: normal;
+  	font-family: "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a {
   color: #000;
   :hover {
-    color: blue;
+    color: #00aff0;
   }
 }
 
@@ -34,11 +34,11 @@ h1.logo{
 .menu-top {
   .list-inline-item a {
     padding-right: .5rem;
-    font-size: 15px;
   }
 }
 /*language*/
 .language{
+	padding-top: 2rem;
   a{
     img{
       width: 25px;
@@ -72,15 +72,17 @@ h1.logo{
     .btn-search{
       width: 32px;
       span{
-        padding: 10px;
-        position: absolute;
-        right: 0;
-        padding: 10px;
+	    position: absolute;
+	    right: 0;
+	    padding: 6px;
+	    border: 1px solid #00aff0;
+	    color: #00aff0;
+	    font-size: 1.1rem;
       }      
     }
     input{
         display: none;
-        margin-top: 38px;
+        margin-top: 31px;
         z-index: 99;
         right: 0;
         transition: all 2s;
@@ -91,7 +93,7 @@ h1.logo{
       transition: all 2s;
       input{
         position: absolute;
-        margin-top: 38px;
+        margin-top: 31px;
         z-index: 99;
         right: 0;
         transition: all 2s;
@@ -102,6 +104,7 @@ h1.logo{
 }
 .wraper.homepage{
 	.business-in-vietnam {
+		position:relative;
 	  .right-side {
 	  	width: 100%;
 	    li {
@@ -109,6 +112,7 @@ h1.logo{
 		    width: 50%;
 		    float: left;
 		    margin-right: 0;
+		    height: 185px;
 	      a{
 	      	img{
 	      		width: 100%;
@@ -125,7 +129,7 @@ h1.logo{
 	  .left-side {
 	  	li.service-title {
 			width: 100%;
-		    padding: 20px 0 20px 10px;
+		    padding: 28px 0 28px 20px;
 		    margin: 15px 0;
 		    border-radius: 5px;
 		    box-shadow: 0px 1px 3px 1px #ccc;
@@ -143,19 +147,20 @@ h1.logo{
 				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
 		  	}
 		  	&:nth-child(2){
-				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
-				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+				background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #0084b6, #4fa7c8, #61aecc);
 		  	}
 		  	&:nth-child(3){
-				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
-				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+				background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc); 
 		  	}
 		  	&:nth-child(4){
-				background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
-				background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+				background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc);
+				background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc);
 		  	}
 		  	a{
 		  		color: #fff;
+		  		font-size: 1.3rem;
 		  	}
 	  	}
 	  	
@@ -197,12 +202,22 @@ h1.logo{
 		ul{
 			li{
 				a{
-					font-size: 14px;
+					font-size: .8rem;
+				    line-height: 20px;
 				}
 			}
 		}
 	}
-	
+	.col-md-3.col-sm-3.col-xs-12{
+		border-left: 2px dashed #000;
+		.box-info-inner{
+			&:first-child{
+				h3{
+					padding: 0 0 10px;
+				}
+			}
+		}
+	}	
 }
 .footer-map{
 	background: #707070;
@@ -218,7 +233,13 @@ h1.logo{
 			a{
 				color: #fff;
 				font-weight:normal;
-				font-size:14px;
+				font-size:1.4 rem;
+			}
+			i{
+				padding: 10px;
+			}
+			.fax{
+				margin-left:5px;
 			}
 		}
 	}
