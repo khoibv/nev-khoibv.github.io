@@ -116,8 +116,8 @@
       <li class="selected">
         <div class="cd-full-width">
           <h2 class="title-name-home">NISSHO ELECTRONICS VIETNAM COMPANY LIMITED</h2>
-          <p>We provide network integration,<br>offshore software services and Enterprise Solution.</p>
-          <a href="" class="cd-btn">Article &amp; Download</a>
+          <p>"We will develop Internet & ICT-based society providing the cutting edge ICT solution & Service"</p>
+          <a href="" class="cd-btn">Learn more >> </a>
         </div> <!-- .cd-full-width -->
       </li>
 
@@ -128,9 +128,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p> -->
           <a href="#0" class="cd-btn">Learn more</a>
         </div> <!-- .cd-full-width -->
-        <div class="cd-bg-video-wrapper" data-video="./video/NEV-introduction">
+<!--         <div class="cd-bg-video-wrapper" data-video="./video/NEV-introduction">
           video element will be loaded using jQuery
-        </div> <!-- .cd-bg-video-wrapper -->
+        </div>  --><!-- .cd-bg-video-wrapper -->
       </li>
 
 
@@ -197,21 +197,67 @@
           </div>
           <div class="row business-in-vietnam">
             <div class="col-md-6 col-sm-6 col-xs-12 left-side">
-              <ul class="dropdown">
-                <li class="service-title wow bounceInLeft dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-wow-delay="0.2s">
-                  <a href="">Network Solutions & Security Solutions <span></span></a>
-                    <ul class="dropdown-menu dropdown-menu-right" >
-                      <li><a href="">Network Solution Overview</a></li>
-                      <li><a href="">Network Solution laboratory Area</a></li>
-                      <li><a href="">Why Nissho Electronics Vietnam?</a></li>
-                      <li><a href="">Network Solution Product</a></li>
-                      <li><img src="" alt=""></li>
-                    </ul>
-                </li>
-                <li class="service-title wow bounceInLeft" data-wow-delay="0.4s"><a href="">Common Point Service <span></span></a></li>
-                <li class="service-title wow bounceInLeft" data-wow-delay="0.6s"><a href="">Enterprise Solution <span></span></a></li>
-                <li class="service-title wow bounceInLeft" data-wow-delay="0.8s"><a href="">Offshore Development <span></span></a></li>
-              </ul>
+              <div class="list">
+                <div class="item">
+                    <a class="url wow bounceInLeft " data-wow-delay="0.2s" data-id="#container1">Network Solutions & Security Solutions</a>
+                </div>
+                <div class="item">
+                    <a class="url wow bounceInLeft " data-wow-delay="0.2s" data-id="#container2">Common Point Service</a>
+                </div>
+                <div class="item">
+                    <a class="url wow bounceInLeft " data-wow-delay="0.2s" data-id="#container3">Enterprise Solution</a>
+                </div>  
+                <div class="item">
+                    <a class="url wow bounceInLeft " data-wow-delay="0.2s" data-id="#container4">Offshore Development</a>
+                </div>                
+              </div>
+              <div class="tab-content">
+                    <div id="container1" class="tab-pane">
+                        <ul>
+                          <li><a href="">Network Solution Overview</a></li>
+                          <li><a href="">Network Solution laboratory Area</a></li>
+                          <li><a href="">Why Nissho Electronics Vietnam?</a></li>
+                          <li><a href="">Network Solution Product</a></li>
+                          <li class="img-service"><img src="img/img-networksolution.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div id="container2" class="tab-pane">
+                        <ul>
+                          <li><a href="">Offshore Development Overview</a></li>
+                          <li><a href="">History of Our Business</a></li>
+                          <li><a href="">Why Nissho Electronics Vietnam?</a></li>
+                          <li><a href="">Offshore Development Overview</a></li>
+                          <li><a href="">Offshore Development Process</a></li>
+                          <li><a href="">The example of the method to proceed our Project</a></li>
+                          <li><a href="">Offshore Development Skill Set</a></li>
+                          <li><a href="">Skill Up Training for Japanese</a></li>
+                          <li><a href="">Project Management Tools</a></li>
+                          <li><a href="">Security Management</a></li>
+                          <li><a href="">Experience (Product Management)</a></li>
+                          <li><a href="">Experience (Project Base)</a></li>
+                        </ul>
+                    </div>
+                    <div id="container3" class="tab-pane">
+                        <ul>
+                          <li><a href="">Enterprise Solution Overview (Software)</a></li>
+                          <li><a href="">Why Nissho Electronics Vietnam?</a></li>
+                          <li><a href="">e-Entry Express+ Overview</a></li>
+                          <li><a href="">Concept for e-Entry Express+</a></li>
+                          <li><a href="">e-Entry Express+ data entry process</a></li>
+                          <li><a href="">e-Entry Express+ Function List</a></li>
+                          <li><a href="">e-Entry Express+ for your business</a></li>
+                        </ul>
+                    </div>
+                    <div id="container4" class="tab-pane">
+                        <ul>
+                          <li><a href="">What is the market need?</a></li>
+                          <li><a href="">What is VPoint?</a></li>
+                          <li><a href="">Vpoint System Overview</a></li>
+                          <li><a href="">How to attract new custom</a></li>
+                          <li><a href="">Accumulation points</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 right-side">
               <ul class="list-inline">
@@ -444,5 +490,14 @@
 <script>
     new WOW().init();
 </script>
+    <script>
+        $(".list .url").hover(function(){
+            $data_id=$(this).attr("data-id");
+            console.log($data_id);
+            $(".tab-content .tab-pane").removeClass("active");
+            $($data_id).addClass("active");   
+                  
+        });
+    </script>
 </body>
 </html>
