@@ -130,28 +130,30 @@ h1.logo{
 	  .left-side {
 	  	.list {
 		    .item{
+		    	width:100%;
+		    	a{
 		    	width: 100%;
-			    padding: 30px 0 30px 20px;
+			    padding: 20px 25px;
+			    display:block;
 			    margin: 15px 0;
 			    border-radius: 5px;
 			    box-shadow: 0px 1px 3px 1px #ccc;
 			    &:nth-child(1) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #4fa7c8, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #4fa7c8, #61aecc);
+					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #61aecc);
+					background: linear-gradient(-45deg,#0084b6, #0084b6, #61aecc);
 			  	}
 			  	&:nth-child(2) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #4fa7c8, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #4fa7c8, #61aecc);
+					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #61aecc);
+					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #61aecc);
 			  	}
 			  	&:nth-child(3) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc); 
+					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #0084b6, #61aecc);
+					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6,  #61aecc); 
 			  	}
 			  	&:nth-child(4) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6, #4fa7c8, #61aecc);
+					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6,#0084b6, #61aecc);
+					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6, #0084b6,  #61aecc);
 			  	}
-			  	a{
 			  		color: #fff;
 			  		font-size: 1.3rem;
 			  	}			  	

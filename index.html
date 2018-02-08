@@ -128,9 +128,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p> -->
           <a href="#0" class="cd-btn">Learn more</a>
         </div> <!-- .cd-full-width -->
-        <div class="cd-bg-video-wrapper" data-video="./video/NEV-introduction">
+      <!--   <div class="cd-bg-video-wrapper" data-video="./video/NEV-introduction">
           video element will be loaded using jQuery
-        </div>  --><!-- .cd-bg-video-wrapper  -->
+        </div> -->  <!-- .cd-bg-video-wrapper  -->
       </li>
 
       <li>
@@ -347,10 +347,10 @@
           <div class="box-info-inner wow fadeInUp" data-wow-delay="0.5s">
             <h3>Network Solutions</h3>
             <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="">Network Solution Overview</a></li>
+              <li><a href="">Network Solution laboratory Area</a></li>
+              <li><a href="">Why Nissho Electronics Vietnam?</a></li>
+              <li><a href="">Network Solution Product</a></li>
             </ul>
           </div>
         </div>
@@ -476,14 +476,22 @@
 <script>
     new WOW().init();
 </script>
-    <script>
-        $(".list .url").hover(function(){
-            $data_id=$(this).attr("data-id");
-            console.log($data_id);
-            $(".tab-content .tab-pane").removeClass("active");
-            $($data_id).addClass("active");   
+<script>
+$(".list .url").hover(
+            function () {
+                $data_id = $(this).attr("data-id");
+                console.log($data_id);
+                $(this).parent().addClass("active");
+                $(".tab-content .tab-pane").removeClass("active");
+                $($data_id).addClass("active");
+            },
 
-        });
-    </script>
+            function () {
+                $(".list .item").removeClass("active");
+                $(".tab-content .tab-pane").removeClass("active");
+                
+            }
+        );
+</script>
 </body>
 </html>
