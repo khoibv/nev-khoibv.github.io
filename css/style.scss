@@ -102,7 +102,7 @@ h1.logo{
     }
   }
 }
-.wraper.homepage{
+.wraper.homepage{	
 	.business-in-vietnam {
 		position:relative;
 	  .right-side {
@@ -132,36 +132,37 @@ h1.logo{
 		    .item{
 		    	width:100%;
 		    	a{
-		    	width: 100%;
-			    padding: 20px 25px;
-			    display:block;
-			    margin: 15px 0;
-			    border-radius: 5px;
-			    box-shadow: 0px 1px 3px 1px #ccc;
-			    &:nth-child(1) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #61aecc);
-			  	}
-			  	&:nth-child(2) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #61aecc);
-			  	}
-			  	&:nth-child(3) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #0084b6, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6,  #61aecc); 
-			  	}
-			  	&:nth-child(4) {
-					background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6,#0084b6, #61aecc);
-					background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6, #0084b6,  #61aecc);
-			  	}
+			    	width: 100%;
+				    padding: 30px 25px;
+				    display:block;
+				    margin: 15px 0;
+				    border-radius: 5px;
+				    box-shadow: 0px 1px 3px 1px #ccc;
+				    border: 1px solid #1cc1ff;				    
 			  		color: #fff;
 			  		font-size: 1.3rem;
+				    &:nth-child(1) {
+						background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #61aecc);
+						background: linear-gradient(-45deg,#0084b6, #0084b6, #61aecc);
+				  	}
+				  	&:nth-child(2) {
+						background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #61aecc);
+						background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #61aecc);
+				  	}
+				  	&:nth-child(3) {
+						background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6, #0084b6, #61aecc);
+						background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6,  #61aecc); 
+				  	}
+				  	&:nth-child(4) {
+						background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6,#0084b6, #61aecc);
+						background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6, #0084b6,  #61aecc);
+				  	}
 			  	}			  	
 		    }
 	  	}
-	  	.tab-content > .active {
+	  	.tab-content > .active{
 				position: absolute;
-				right: -104%;
+				right: -100%;
 				width: 100%;
 				height: 100%;
 				background: #fff;
@@ -190,13 +191,31 @@ h1.logo{
 	  }
 
 	}
-	.title-news, .title-product{
+	.title-news{
 		h3{
 			width: 100%;
-			border-bottom: 5px solid #1098cc;
 		    font-size: 30px;
 		    font-weight: bold;
 		    color: #00406d;
+		    text-transform: uppercase;
+		    padding: 25px 0;
+			span{
+				i{
+					color: #00aff0;
+	    			padding: 15px 15px 0 0;
+				}
+			}
+		}
+
+	} 
+	.title-product{
+		h3{
+			width: 100%;
+		    font-size: 30px;
+		    font-weight: bold;
+		    color: #00406d;
+		    text-transform: uppercase;
+		    padding: 25px 0 10px;
 			span{
 				i{
 					color: #00aff0;
@@ -206,16 +225,24 @@ h1.logo{
 		}
 
 	}
+	.home-news{
+		background: #d9f4ff ;
+	} 
+	.home-service{
+		margin-bottom:20px;
+	}	
 	.new-deatail-home{
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 		.main-news{
 			margin-top:10px;
+			background: #fff;
+			padding: 10px; 
 			.detail{
-				background: #ebebeb;
-				padding: 10px;
+				padding: 10px 0;
 				.date{
 					color: #000;
 					font-weight: bold;
+					display: block;
 					width: 100%;
 					margin-right: 10px;
 					i{
@@ -224,7 +251,9 @@ h1.logo{
 				}
 				.title{
 					color: #000;
-					font-weight: bold;
+				    font-weight: bold;
+				    text-align: justify;
+				    display: inherit;
 				}
 			}
 		}
@@ -244,6 +273,20 @@ h1.logo{
 				}
 			}
 			a.all-new{
+			    background: url(../img/all-new.png) no-repeat;
+				padding: 3px 106px 5px 5px;
+			    color: #fff;
+			    float: right;
+			    bottom: 0;
+			    position: absolute;
+			    right: 0;
+				i{
+					transform: rotate(45deg);
+				    position: absolute;
+				    right: 15px;
+				    color: #57a1f5;
+				    margin-top: 3px;
+				}
 
 			}
 		}
@@ -251,7 +294,10 @@ h1.logo{
 }
 .footer-service{
 	background: #dddddd;
-	padding: 20px 0;
+	padding: 25px 0;
+	.row{
+		margin:0;
+	}
 	.box-info-inner{
 		h3{
 			font-size:14px;
@@ -281,7 +327,10 @@ h1.logo{
 .footer-map{
 	background: #707070;
 	color: #fff;
-	padding: 20px 0;
+	padding: 25px 0;
+	.row{
+		margin: 0;
+	}
 	h2{
 		font-weight: bold;
 		font-size: 14px;
