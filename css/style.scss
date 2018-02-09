@@ -34,6 +34,7 @@ h1.logo{
 .menu-top {
   .list-inline-item a {
     padding-right: .5rem;
+    font-size: .8rem;
   }
 }
 /*language*/
@@ -51,16 +52,30 @@ h1.logo{
 .main-menu {
   .navbar-nav {
     li.nav-item {
-      ::after {
+    	position: relative;
+    	padding-right: 10px;
+    	a{
+    		font-size: 1rem;
+    	}
+      &:after {
         content: "|";
         padding-left: 8px;
+        position: absolute;
+        right: 0;
+        top: 7px;
       }
 
-      :last-child {
-        ::after {
+      &:last-child {
+        &:after {
           content: "";
           padding-left: 0;
-        }
+        }        
+      }
+      &.active{
+      	a{
+      		background: #0060ef;
+      		color: #fff;
+      	}
       }
     }
   }
@@ -133,7 +148,7 @@ h1.logo{
 		    	width:100%;
 		    	a{
 			    	width: 100%;
-				    padding: 30px 25px;
+				    padding: 37px 25px;
 				    display:block;
 				    margin: 15px 0;
 				    border-radius: 5px;
@@ -160,14 +175,43 @@ h1.logo{
 			  	}			  	
 		    }
 	  	}
-	  	.tab-content > .active{
-				position: absolute;
-				right: -100%;
-				width: 100%;
-				height: 100%;
-				background: #fff;
-				z-index: 99;
-				top: 15px;
+	  	.tab-content{
+	  		position: absolute;
+			right: -98%;
+			width: 101%;
+			height: 100%;
+			background: transparent;
+			z-index: 99;
+			top: 15px;
+			#container1, #container2, #container3, #container4 {
+				margin-left: 20px;
+			    background: url(../img/bg-service.png);
+			    padding: 38px 55px;
+			    height: 93%;
+			    border: 1px solid #1cc1ff;
+			    ul{
+			    	background: #fff;
+			    	height: 100%;
+			    	position: relative;
+			    	li{
+			    		&.title-service{
+			    			padding: 10px 0 0;
+			    			span{
+			    				padding: 0 20px;
+			    				i{
+			    					transform: rotate(45deg);
+			    					color: #57a1f5;
+			    				}
+			    			}
+			    		}
+			    		&.img-service{
+			    			position: absolute;
+			    			bottom: 0;
+			    			left: 0;
+			    		}
+			    	}
+			    }
+			}
 		}
 	  	.sub-menu-show {
 		    display: block;
@@ -258,6 +302,7 @@ h1.logo{
 			}
 		}
 		.news-detail{
+			display: block;
 			.row{
 				padding: 10px 0;
 				border-bottom: 1px dashed #ccc;
@@ -269,6 +314,7 @@ h1.logo{
 					padding: 0;
 					a{
 						text-align: justify;
+					    display: block;
 					}
 				}
 			}
@@ -363,5 +409,73 @@ h1.logo{
 	a{
 		font-size: 12px;
 		color: #fff;
+	}
+}
+.social{
+		position: fixed;
+	    top: 22%;
+	    left: 0;
+	    z-index: 99;
+	    ul{
+	    	width: auto;
+	    	li{
+	    		background: transparent;
+	    		height:45px;
+	    		height:44px;
+	    		overflow: hidden;
+	    		transition: all 1s;
+	    		&.fb{	    			
+	    			width: auto;
+	    			padding-left: 0;
+		    		&:hover{
+		    			background: #30487d;
+			    		padding-left: 45px;
+			    	} 			
+	    		}
+	    		&.twitter{	    			
+	    			width: auto;
+	    			padding-left: 0;
+		    		&:hover{
+		    			background: #339dc3;
+			    		padding-left: 45px;
+			    	}
+	    		}
+	    		&.plus{	    			
+	    			width: auto;
+	    			padding-left: 0;
+		    		&:hover{
+		    			background: #dc4335;
+			    		padding-left: 45px;
+			    	}
+	    		}
+	    		&.in{	    			
+	    			width: auto;
+	    			padding-left: 0;
+		    		&:hover{
+		    			background: #005883;
+			    		padding-left: 45px;
+			    	}
+	    		}
+
+	    	}
+	    }
+}
+.gotofb{
+	position: fixed;
+	bottom: 42px;
+	right: 0;
+	z-index: 99;  
+}
+.backtop{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+	height: 45px;  
+	button{
+		overflow: hidden;
+	}
+	#myBtn{
+		display: none;
 	}
 }
