@@ -18,7 +18,7 @@ a {
 }
 
 p {
-  color: #f00;
+  color: #000;
   ul {
     color: #fff;
     li {
@@ -128,11 +128,11 @@ h1.logo{
 		    width: 50%;
 		    float: left;
 		    margin-right: 0;
-		    height: 185px;
+		    height: 170px;
 	      a{
 	      	img{
 	      		width: 100%;
-	      		height: 170px;
+	      		height: 155px;
 	      	}	      	
 	      }
 	      &:nth-child(2), &:nth-child(4){
@@ -148,14 +148,15 @@ h1.logo{
 		    	width:100%;
 		    	a{
 			    	width: 100%;
-				    padding: 37px 25px;
+				    padding: 25px 25px;
 				    display:block;
 				    margin: 15px 0;
 				    border-radius: 5px;
 				    box-shadow: 0px 1px 3px 1px #ccc;
 				    border: 1px solid #1cc1ff;				    
 			  		color: #fff;
-			  		font-size: 1.3rem;
+			  		font-size: 1.3rem;	
+			  		position:relative;		  		
 				    &:nth-child(1) {
 						background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #61aecc);
 						background: linear-gradient(-45deg,#0084b6, #0084b6, #61aecc);
@@ -172,6 +173,17 @@ h1.logo{
 						background: -webkit-linear-gradient(135deg,#0084b6, #0084b6, #0084b6,#0084b6, #61aecc);
 						background: linear-gradient(-45deg,#0084b6, #0084b6, #0084b6, #0084b6, #0084b6,  #61aecc);
 				  	}
+				  	span{
+				  		i{
+						    color: transparent;
+						    position: absolute;
+						    right: 10px;
+						    background: url(../img/icon-next.png) no-repeat center;
+						    height: 52px;
+						    top: 7px;
+						    width: 29px;
+				  		}
+				  	}
 			  	}			  	
 		    }
 	  	}
@@ -184,13 +196,13 @@ h1.logo{
 			z-index: 99;
 			top: 15px;
 			#container1, #container2, #container3, #container4 {
-				margin-left: 20px;
-			    background: url(../img/bg-service.png);
+				margin-left: 20px;			    
 			    padding: 38px 55px;
 			    height: 93%;
-			    border: 1px solid #1cc1ff;
-			    ul{
-			    	background: #fff;
+			    ul{    
+			    	background-image: url(../img/bgulservice.png);
+				    background-color: #fff;
+				    background-size: 100% 100%;
 			    	height: 100%;
 			    	position: relative;
 			    	li{
@@ -199,8 +211,9 @@ h1.logo{
 			    			span{
 			    				padding: 0 20px;
 			    				i{
-			    					transform: rotate(45deg);
-			    					color: #57a1f5;
+			    				    transform: none;
+								    color: transparent;
+								    background: url(../img/icon-nextservice.png) no-repeat center;
 			    				}
 			    			}
 			    		}
@@ -211,6 +224,29 @@ h1.logo{
 			    		}
 			    	}
 			    }
+			}
+			#container1{				
+				background-image: url(../img/bg-service.png);
+			    background-repeat: no-repeat;
+			    background-size: 100% 100%;
+			}
+			#container2{
+				background-image: url(../img/bg-service.png);
+			    background-repeat: no-repeat;
+			    background-size: 100% 100%;
+				ul{
+					overflow-y:auto;
+				}
+			}
+			#container3{
+				background-image: url(../img/bg-service.png);
+			    background-repeat: no-repeat;
+			    background-size: 100% 100%;
+			}
+			#container4{
+				background-image: url(../img/bg-service.png);
+			    background-repeat: no-repeat;
+			    background-size: 100% 100%;
 			}
 		}
 	  	.sub-menu-show {
@@ -477,5 +513,54 @@ h1.logo{
 	}
 	#myBtn{
 		display: none;
+		position: fixed;
 	}
 }
+
+.banner-top.network{
+	position: relative;	
+	img{
+		width:100%;
+	}
+	.breadcumb{
+	    position: absolute;
+	    bottom: 10px;
+	    margin-left: 15px;
+	    ul{
+	    	li{
+	    		width: 100px;
+	    		&:nth-child(1){
+	    			font-size: 0.9rem;
+	    			color: #6776c7;
+	    		}
+	    		&:nth-child(2){
+	    			font-size: 0.9rem;
+	    			color: #6776c7;
+	    		}
+	    		&:nth-child(3){
+	    			font-size: 1.9rem;
+	    			color: #6776c7;
+					line-height: 37px;
+				    font-weight: bold;
+	    		}
+	    	}
+	    }
+	}
+}
+.wraper {
+// network solution
+	&.networksolution
+		.product-list{
+			ul{
+				li{
+					background: #1143e7;
+					border: 1px solid #01baff;
+					padding: 11px 12px;
+					margin-bottom: 5px;
+					a{
+						coloR: #fff;
+					}
+				}
+			}
+		}
+	}
